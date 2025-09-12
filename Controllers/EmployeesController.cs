@@ -39,11 +39,16 @@ namespace AvancApi.Controllers
 
         // POST: api/employees
         [HttpPost]
-        public async Task<IActionResult> Create(Employee employee)
+        public async Task<IActionResult> Create(Employee employee, [FromRoute] string version)
         {
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { id = employee.Id }, employee);
+
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = employee.Id, version = version },
+                employee
+            );
         }
 
         // PUT: api/employees/5
