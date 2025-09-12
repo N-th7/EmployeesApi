@@ -1,0 +1,102 @@
+# ---------------------------------------
+# GitIgnore para .NET 9 / Visual Studio / VSCode
+# ---------------------------------------
+
+## Elementos generales de compilación
+/bin/
+/obj/
+/artifacts/
+/publish/
+/out/
+/dist/
+
+## Visual Studio
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+.vs/
+
+## Rider
+.idea/
+*.sln.iml
+
+## Visual Studio Code
+.vscode/
+settings.json
+launch.json
+tasks.json
+
+## Archivos generados por MSBuild
+*.cache
+*.log
+*.vsix
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.binlog
+
+## Paquetes y dependencias
+*.nuspec
+packages/
+.nuget/
+# Para usar PackageReference en lugar de paquetes locales
+# Ignorar carpeta global de paquetes si es relevante
+# ~/.nuget/packages/ (este suele estar fuera del repositorio)
+
+## Otros generados / temporales
+*.tmp
+*.temp
+~$*
+*.bak
+*.swp
+*.lock.json
+
+## Testing
+TestResults/
+*.trx
+coverage/
+coverage*.xml
+*.coverage
+*.coveragexml
+
+## Herramientas de calidad de código
+BenchmarkDotNet.Artifacts/
+.dotnet/tools/**/temp/
+
+## Configuraciones locales y secretos
+appsettings.Development.json
+launchSettings.json
+
+## Contenedores / Docker
+**/Dockerfile (si tienes generados)
+docker-compose.override.yml
+**/docker-compose.*.yml
+
+## Archivos específicos de plataforma
+# Por ejemplo Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Linux temporal
+*~
+
+## Otros
+global.json
+local.settings.json
+.env
+
+# ---------------------------------------
+# Fin del .gitignore
+# ---------------------------------------
