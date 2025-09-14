@@ -6,6 +6,10 @@ namespace AvancApi.Models
         public required string Name { get; set; }
         public required string Email { get; set; }
         public required string PhoneNumber { get; set; }
-        public decimal Salary { get; set; }
+
+        public string? DocumentId { get; set; }
+        public string? Company { get; set; }
+
+        public decimal MaxFixedAmount { get; set; }
     }
 }
