@@ -7,7 +7,6 @@ namespace AvancApi.Controllers
 {
 
     [ApiController]
-    // [ApiVersion("1.0")]
     [Route("api/v{version}/[controller]")]
     public class EmployeesController : ControllerBase
     {
@@ -77,5 +76,22 @@ namespace AvancApi.Controllers
 
             return NoContent();
         }
+
+        // // GET: api/employees?name=<name>
+        // [HttpGet]
+        // public async Task<IActionResult> GetAll([FromQuery] string? name)
+        // {
+        //     var query = _context.Employees.AsQueryable();
+
+        //     if (!string.IsNullOrEmpty(name))
+        //     {
+        //         // Filtra por nombre que contenga la cadena (case-insensitive)
+        //         query = query.Where(e => EF.Functions.ILike(e.Name, $"%{name}%"));
+        //     }
+
+        //     var employees = await query.ToListAsync();
+        //     return Ok(employees);
+        // }
+
     }
 }
