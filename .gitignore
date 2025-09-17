@@ -1,16 +1,78 @@
-# Visual Studio
-.vs/
+# Archivos de compilación
+bin/
+obj/
+out/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de cache de dependencias
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de configuración generados
+*.ide/
+*.ide-shm
+*.ide-wal
+*.ide-journal
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de publicación
+*.Publish.xml
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+*.ndf
+
+# Paquetes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.nupkg.metadata
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+
+# Archivos generados por Razor
+*.rjs*
+*.razor*
+
+# Archivos de pruebas
+TestResult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Archivos de publish
+publish/
+
+
+# Archivos de compilación de .NET
 bin/
 obj/
 *.user
 *.suo
-*.exe
-*.dll
-*.pdb
+*.log
+*.vs/
 
-# Entornos
 .env
-
-# IDE
-*.idea/
-*.vscode/
