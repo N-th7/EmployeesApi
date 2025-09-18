@@ -8,5 +8,6 @@ namespace AvancApi.Data
         public EmployeeContext(DbContextOptions<EmployeeContext> options) : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

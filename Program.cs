@@ -35,6 +35,7 @@ builder.Services.AddApiVersioning(options =>
 });
 
 builder.Services.AddDbContext<EmployeeContext>(options => options.UseNpgsql(connectionString));
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
